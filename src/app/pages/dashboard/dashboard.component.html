@@ -1,18 +1,20 @@
 <div class="row">
-  <div class="col-lg-3 col-md-6 col-sm-6">
+  <div class="col-lg-4 col-md-6 col-sm-6">
     <div class="card card-stats">
       <div class="card-body ">
         <div class="row">
           <div class="col-5 col-md-4">
             <div class="icon-big text-center icon-warning">
-              <i class="nc-icon nc-globe text-warning"></i>
+              <i class="nc-icon nc-zoom-split text-success"></i>
             </div>
           </div>
           <div class="col-7 col-md-8">
             <div class="numbers">
-              <p class="card-category">Capacity</p>
-              <p class="card-title">150GB
-                <p>
+              <p class="card-category">Searches</p>
+              <p class="card-title">
+                3578
+                <!-- place holder -->
+              <p>
             </div>
           </div>
         </div>
@@ -25,20 +27,20 @@
       </div>
     </div>
   </div>
-  <div class="col-lg-3 col-md-6 col-sm-6">
+  <div class="col-lg-4 col-md-6 col-sm-6">
     <div class="card card-stats">
       <div class="card-body ">
         <div class="row">
           <div class="col-5 col-md-4">
             <div class="icon-big text-center icon-warning">
-              <i class="nc-icon nc-money-coins text-success"></i>
+              <i class="nc-icon nc-sound-wave text-danger"></i>
             </div>
           </div>
           <div class="col-7 col-md-8">
             <div class="numbers">
-              <p class="card-category">Revenue</p>
-              <p class="card-title">$ 1,345
-                <p>
+              <p class="card-category">Zero results Searches</p>
+              <p class="card-title">2630
+              <p>
             </div>
           </div>
         </div>
@@ -51,20 +53,21 @@
       </div>
     </div>
   </div>
-  <div class="col-lg-3 col-md-6 col-sm-6">
+
+  <div class="col-lg-4 col-md-6 col-sm-6">
     <div class="card card-stats">
       <div class="card-body ">
         <div class="row">
           <div class="col-5 col-md-4">
             <div class="icon-big text-center icon-warning">
-              <i class="nc-icon nc-vector text-danger"></i>
+              <i class="nc-icon nc-paper text-info"></i>
             </div>
           </div>
           <div class="col-7 col-md-8">
             <div class="numbers">
-              <p class="card-category">Errors</p>
-              <p class="card-title">23
-                <p>
+              <p class="card-category">Docs</p>
+              <p class="card-title">10650
+              <p>
             </div>
           </div>
         </div>
@@ -72,59 +75,38 @@
       <div class="card-footer ">
         <hr>
         <div class="stats">
-          <i class="fa fa-clock-o"></i> In the last hour
+          <i class="fa fa-calendar-o"></i> Last day
         </div>
       </div>
     </div>
   </div>
-  <div class="col-lg-3 col-md-6 col-sm-6">
-    <div class="card card-stats">
-      <div class="card-body ">
-        <div class="row">
-          <div class="col-5 col-md-4">
-            <div class="icon-big text-center icon-warning">
-              <i class="nc-icon nc-favourite-28 text-primary"></i>
-            </div>
-          </div>
-          <div class="col-7 col-md-8">
-            <div class="numbers">
-              <p class="card-category">Followers</p>
-              <p class="card-title">+45K
-                <p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-footer ">
-        <hr>
-        <div class="stats">
-          <i class="fa fa-refresh"></i> Update now
-        </div>
-      </div>
-    </div>
-  </div>
+
+
 </div>
+
 <div class="row">
-  <div class="col-md-12">
-    <div class="card ">
-      <div class="card-header ">
-        <h5 class="card-title">Users Behavior</h5>
-        <p class="card-category">24 Hours performance</p>
+  <div class=" col-12">
+    <div class="card card-chart">
+      <div class="card-header">
+        <h5 class="card-title">User Searches behavior</h5>
+        <p class="card-category">Last weak</p>
       </div>
-      <div class="card-body ">
-        <canvas id=chartHours width="400" height="100"></canvas>
+      <div class="card-body">
+        <canvas id="speedChart" width="400" height="100"></canvas>
       </div>
-      <div class="card-footer ">
-        <hr>
-        <div class="stats">
-          <i class="fa fa-history"></i> Updated 3 minutes ago
+      <div class="card-footer">
+        <div class="chart-legend">
+          <i class="fa fa-circle text-success"></i> Searches
+          <i class="fa fa-circle text-danger"></i> Zero Results
+          Searches
         </div>
+        <hr />
+
       </div>
     </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-md-4">
+
+  <!-- <div class="col-md-4">
     <div class="card ">
       <div class="card-header ">
         <h5 class="card-title">Email Statistics</h5>
@@ -141,30 +123,205 @@
           <i class="fa fa-circle text-gray"></i> Unopened
         </div>
         <hr>
-        <div class="stats">
-          <i class="fa fa-calendar"></i> Number of emails sent
-        </div>
+
       </div>
     </div>
-  </div>
-  <div class="col-md-8">
+  </div> -->
+</div>
+
+<div class="row">
+  <div class=" col-md-6 col-sm-12">
     <div class="card card-chart">
       <div class="card-header">
-        <h5 class="card-title">NASDAQ: AAPL</h5>
-        <p class="card-category">Line Chart with Points</p>
+        <h5 class="card-title">Top Queries</h5>
+        <p class="card-category">Last weak</p>
       </div>
       <div class="card-body">
-        <canvas id="speedChart" width="400" height="100"></canvas>
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="text-primary">
+              <th>
+                Search term
+              </th>
+              <th>
+                Queries
+              </th>
+              <th>
+                Clicks
+              </th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  iPhone
+                </td>
+                <td>
+                  250
+                </td>
+                <td>
+                  30
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Laptop
+                </td>
+                <td>
+                  180
+                </td>
+                <td>
+                  20
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Smart TV
+                </td>
+                <td>
+                  320
+                </td>
+                <td>
+                  45
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Nike shoes
+                </td>
+                <td>
+                  410
+                </td>
+                <td>
+                  60
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Headphones
+                </td>
+                <td>
+                  120
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Bluetooth speaker
+                </td>
+                <td>
+                  280
+                </td>
+                <td>
+                  35
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Camera
+                </td>
+                <td>
+                  90
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  PlayStation
+                </td>
+                <td>
+                  420
+                </td>
+                <td>
+                  50
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Adidas sneakers
+                </td>
+                <td>
+                  150
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Books
+                </td>
+                <td>
+                  200
+                </td>
+                <td>
+                  25
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <div class="card-footer">
         <div class="chart-legend">
-          <i class="fa fa-circle text-info"></i> Tesla Model S
-          <i class="fa fa-circle text-warning"></i> BMW 5 Series
+
         </div>
-        <hr/>
-        <div class="card-stats">
-          <i class="fa fa-check"></i> Data information certified
+        <hr />
+
+      </div>
+    </div>
+  </div>
+
+  <div class=" col-md-6 col-sm-12">
+    <div class="card card-chart">
+      <div class="card-header">
+        <h5 class="card-title">Zero result Queries</h5>
+        <p class="card-category">Last weak</p>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Search term</th>
+                <th>Queries</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>naiqui</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td>dynasty warriors
+                </td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>conjuring devil </td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td>tom clancy</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>hande erçel</td>
+                <td>50</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
+      <div class="card-footer">
+        <div class="chart-legend">
+
+        </div>
+        <hr />
+
       </div>
     </div>
   </div>
